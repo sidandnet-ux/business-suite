@@ -9,19 +9,19 @@ const apps = [
   },
 
   {
-    id: "inventory",
-    name: "Inventory",
-    description: "Inventory and stock management",
+    id: "todo",
+    name: "TODO",
+    description: "TODO",
     icon: "📦",
-    url: "https://sidandnet-ux.github.io/inventory/"
+    url: "https://sidandnet-ux.github.io/todo/"
   },
 
   {
-    id: "attendance",
-    name: "Attendance",
-    description: "Employee attendance management",
+    id: "Expense-Manage",
+    name: "Expense-Manage",
+    description: "Expense-Manage",
     icon: "📅",
-    url: "https://sidandnet-ux.github.io/attendance/"
+    url: "https://sidandnet-ux.github.io/Expense-Manage/"
   }
 ];
 
