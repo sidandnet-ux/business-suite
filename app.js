@@ -21,7 +21,7 @@ const apps = [
     name: "Expense-Manager",
     description: "Expense-Manager",
     icon: "📅",
-    url: "https://sidandnet-ux.github.io/Expense-Manage/"
+    url: "https://sidandnet-ux.github.io/Expense-Manager/"
   },
   {
     id: "task",
