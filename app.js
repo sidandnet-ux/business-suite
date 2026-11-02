@@ -22,7 +22,15 @@ const apps = [
     description: "Expense-Manage",
     icon: "📅",
     url: "https://sidandnet-ux.github.io/Expense-Manage/"
+  },
+  {
+    id: "task",
+    name: "task",
+    description: "task",
+    icon: "📅",
+    url: "https://sidandnet-ux.github.io/task/"
   }
+  
 ];
 
 let currentApp = null;
