@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172554">
+
+  <title>Business Suite</title>
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-icon">B</div>
+      <div>
+        <strong>Business Suite</strong>
+        <small>Workspace</small>
+      </div>
+    </div>
+
+    <div class="menu-label">MAIN MENU</div>
+
+    <button class="nav-btn active"
+      onclick="showDashboard()">
+      <span>▦</span> Dashboard
+    </button>
+
+    <div class="menu-label">APPLICATIONS</div>
+
+    <div id="sideApps"></div>
+
+    <div class="sidebar-bottom">
+      <button class="nav-btn" onclick="showDashboard()">
+        ⚙ Settings
+      </button>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <button class="menu-toggle"
+        onclick="toggleSidebar()">☰</button>
+
+      <div class="page-heading">
+        <h2 id="pageTitle">Dashboard</h2>
+        <small>Business Suite / Workspace</small>
+      </div>
+
+      <button class="home-btn"
+        onclick="showDashboard()">Home</button>
+    </header>
+
+    <section id="dashboard" class="content">
+
+      <div class="welcome">
+        <h1>Welcome to Business Suite</h1>
+        <p>All your business applications in one place.</p>
+      </div>
+
+      <h3>My Applications</h3>
+
+      <div class="app-grid" id="appGrid"></div>
+
+    </section>
+
+    <section id="appViewer" class="viewer hidden">
+
+      <div class="viewer-toolbar">
+        <span id="currentAppName">Application</span>
+
+        <div>
+          <button onclick="reloadApp()">↻ Reload</button>
+          <button onclick="openExternal()">↗ Open separately</button>
+        </div>
+      </div>
+
+      <iframe
+        id="appFrame"
+        title="Business application"
+        allow="fullscreen"
+        loading="lazy">
+      </iframe>
+
+      <div id="frameError" class="frame-error hidden">
+        This application cannot be displayed inside the dashboard.
+        <button onclick="openExternal()">Open application</button>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="./app.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js")
+    .catch(error => console.error("Service worker:", error));
+}
+</script>
+
+</body>
+</html>
