@@ -17,9 +17,9 @@ const apps = [
   },
 
   {
-    id: "Expense-Manage",
-    name: "Expense-Manage",
-    description: "Expense-Manage",
+    id: "Expense-Manager",
+    name: "Expense-Manager",
+    description: "Expense-Manager",
     icon: "📅",
     url: "https://sidandnet-ux.github.io/Expense-Manage/"
   },
