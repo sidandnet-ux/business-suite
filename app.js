@@ -29,6 +29,15 @@ const apps = [
     description: "task",
     icon: "📅",
     url: "https://sidandnet-ux.github.io/task/"
+  },
+  {
+   id: "grocery-tracker",
+    name: "grocery-tracker",
+    description: "grocery-tracker",
+    icon: "📅",
+    url: "https://sidandnet-ux.github.io/grocery-tracker/"
+
+    
   }
   
 ];
